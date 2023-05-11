@@ -1,7 +1,6 @@
 import { useParallax } from "react-scroll-parallax";
 import React, { useRef } from "react";
 import getParallaxHOC from "@self/components/parellax";
-import { Typography } from "@mui/material";
 
 function Parellex() {
   const target = useRef(null);
@@ -21,9 +20,6 @@ function Parellex() {
       Photo by <a href="https://unsplash.com/@daria_shevtsova?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daria Shevtsova</a> on <a href="https://unsplash.com/photos/zbWFT4eVopE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       </div> */}
   
-      <Typography variant="h4" component="h1" gutterBottom>
-        Hi, This is Utkarsh Deep
-      </Typography>
       <div ref={name.ref} className="absolute"
         style={{
           top: '11vh',
