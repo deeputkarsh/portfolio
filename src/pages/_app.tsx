@@ -24,6 +24,8 @@ export default function MyApp(props: MyAppProps) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
+        <title>Utkarsh Deep an AWS Certified Solutions Architect</title>
+        <meta name="description" content="Technical lead with expertise in website development, architecture and Devops. Has the following AWS certifications: AWS Certified Solutions Architect, AWS Certified Developer Associate and AWS Certified SysOps Administrator Associate" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
