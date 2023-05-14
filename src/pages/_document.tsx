@@ -22,6 +22,8 @@ export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
     <Html lang="en" className={roboto.className}>
       <Head>
         {/* PWA primary color */}
+        <title>Utkarsh Deep | AWS Certified Solutions Architect</title>
+        <meta name="description" content="Technical lead with expertise in website development, architecture and Devops. Has the following AWS certifications: AWS Certified Solutions Architect, AWS Certified Developer Associate and AWS Certified SysOps Administrator Associate" />
         <meta name="theme-color" content={theme.palette.primary.main} />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="emotion-insertion-point" content="" />
