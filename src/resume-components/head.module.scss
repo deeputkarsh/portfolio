@@ -1,0 +1,27 @@
+@import "mixin";
+.header {
+  @include bold;
+}
+.name {
+  font-size: 32px;
+}
+.title {
+  font-size: 16px;
+  padding: 10px 0;
+  color: var(--blue);
+}
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  & > div {
+    display: flex;
+    min-width: calc(100% / 3);
+    flex: 1;
+  }
+}
+.icon {
+  @include small-icon;
+}

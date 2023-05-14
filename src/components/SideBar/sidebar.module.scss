@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+@import '../../styles/colors';
+
+.greetContainer{
+  background-color: $primaryClr;
+  color: $secondaryClr;
+}
+.container {
+  width: 300px;
+  .item.activeLink {
+    opacity: 1;
+    background-color: $secondaryClr;
+  }
+  .itemText {
+    color: $secondaryTextClr;
+  }
+}
+.logoContainer{
+  background: url('/logo.png') no-repeat;
+  width: 46px;
+  height: 46px;
+  background-size: contain;
+}

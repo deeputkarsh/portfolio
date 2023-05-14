@@ -1,0 +1,15 @@
+@import "list-items";
+.exp-item{
+  .details {
+    .designation {
+      font-size: 16px;
+    }
+    .company-name {
+      margin-top: 5px;
+      color: var(--blue);
+    }
+  }
+  .company-desc {
+    margin-top: 15px;
+  }
+}

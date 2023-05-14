@@ -1,0 +1,27 @@
+@import '../../styles/colors.scss';
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footerWrapper {
+  width: 100%;
+  background-color: $secondaryClr;
+  color: $primaryTextClr;
+  height: $footer-height;
+  font-size: 12px;
+  font-weight: 400;
+  z-index: 1000;
+  // letter-spacing: 5px;
+  transition: all 0.5s;
+  box-shadow: unset;
+  &.scrolled{
+    box-shadow: 0px -6px 12px 0px rgba(0,0,0,0.3);
+  }
+  @include flexCenter;
+  @include md {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  @include sm {
+    letter-spacing: 1px;
+  }
+}

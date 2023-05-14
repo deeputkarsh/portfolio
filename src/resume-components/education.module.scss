@@ -1,0 +1,15 @@
+@import "list-items";
+.edu-item{
+  font-size: 14px;
+  .course-name {
+    font-size: 18px;
+  }
+  .institute {
+    margin-top: 5px;
+    color: var(--blue);
+  }
+  .duration {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}

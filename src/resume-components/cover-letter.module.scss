@@ -1,0 +1,10 @@
+.container {
+  background-color: var(--white);
+  max-width: 1240px;
+  margin: auto;
+  font-size: 20px;
+  & > div {
+    padding: 10px 0;
+    text-align: justify;
+  }
+}

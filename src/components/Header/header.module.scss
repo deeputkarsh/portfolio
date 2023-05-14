@@ -1,0 +1,42 @@
+@import '../../styles/fonts';
+@import '../../styles/colors.scss';
+@import '../../styles/variables';
+
+.headerWrapper{
+  width: 100%;
+  padding: 0 15px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: $header-height;
+  z-index: 1000;
+  letter-spacing: 0;
+  transition: all 0.5s;
+  &.scrolled{
+    background: $headerClr;
+    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.3);
+  }
+  .burgerIcon {
+    color: $secondaryClr;
+    height: $header-content-height;
+    width: 30px;
+    cursor: pointer;
+  }
+}
+
+.logoutBtn{
+  background-color: $secondaryClr;
+  cursor: pointer;
+  color: $primaryTextClr;
+  border: 2px solid $primaryClr;
+  padding: 5px 15px;
+  min-width: 64px;
+  font-size: 0.8125rem;
+  line-height: 2.75;
+  border-radius: 4px;
+  text-transform: uppercase;
+}

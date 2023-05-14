@@ -1,0 +1,15 @@
+@import './mixins.scss';
+.container {
+  background-color: var(--white);
+  max-width: 1240px;
+  margin: auto;
+  width: 100%;
+  min-height: 100vh;
+  @include flexCenter;
+  flex-direction: column;
+  a {
+    text-decoration: none;
+    color: unset;
+    outline: none;
+  }
+}

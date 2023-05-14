@@ -1,0 +1,19 @@
+@import "list-items";
+.projects {
+  font-size: 14px;
+}
+.title {
+  font-size: 18px;
+}
+.app-link {
+  display: flex;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.role {
+  margin-top: 5px;
+  font-weight: 600;
+}
+.icon {
+  @include small-icon;
+}

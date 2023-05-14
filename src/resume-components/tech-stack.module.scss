@@ -1,0 +1,17 @@
+@import "list-items";
+.tech-stack-section {
+  .title {
+    color: var(--blue);
+  }
+  .tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    .tiles {
+      margin: 0 10px 10px 0;
+      padding: 6px 10px;
+      border: 1px solid #888;
+      flex-shrink: 1;
+    }
+  }
+}

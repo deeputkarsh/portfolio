@@ -1,0 +1,15 @@
+@import "mixin";
+.container {
+  display: flex;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.item {
+  display: flex;
+  &:first-child{
+    min-width: 150px;
+  }
+}
+.icon {
+  @include small-icon;
+}

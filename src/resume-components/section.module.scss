@@ -1,0 +1,7 @@
+@import "mixin";
+.header {
+  @include bold;
+  border-bottom: 2px solid #333;
+  line-height: 32px;
+  font-size: 20px;;
+}

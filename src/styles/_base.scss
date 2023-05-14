@@ -1,0 +1,13 @@
+@import './fonts.scss';
+@import './colors.scss';
+@import './variables.scss';
+@import './mixins.scss';
+html, body{
+    margin: 0;
+    padding: 0;
+    @include roboto_regular;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    letter-spacing: 2px;
+    // background: $bgClr;
+}

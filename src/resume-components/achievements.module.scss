@@ -1,0 +1,16 @@
+@import "list-items";
+.achivement-row {
+  display: flex;
+}
+.star-container{
+  min-width: 70px;
+  display: flex;
+  justify-content: center;
+}
+.title{
+  font-weight: 600;
+}
+.details{
+  margin-top: 5px;
+  font-size: 12px;
+}

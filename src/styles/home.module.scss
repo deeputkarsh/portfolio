@@ -1,0 +1,36 @@
+@import './colors.scss';
+@import './mixins.scss';
+.container {
+    position: relative;
+}
+.bgImage {
+    background-image: url('/workstation.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh
+}
+.bgOverlay {
+    background: rgba(68,68,68,0.4);
+    color: $primaryClr;
+}
+.introContent {
+    width: 100%;
+    height: 100vh;
+    @include flexCenter;
+    flex-direction: column;
+}
+.reference {
+    font-size: 8px;
+    text-align: right;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+.introWelcome {
+  max-width: 1240px;
+  margin: auto;
+  width: 100%;
+  @include flexCenter;
+  flex-direction: column;
+}
