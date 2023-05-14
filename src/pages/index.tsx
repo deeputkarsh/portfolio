@@ -1,5 +1,5 @@
 import { useParallax } from "react-scroll-parallax";
-import React, { useRef } from "react";
+import React, { RefObject, useRef } from "react";
 import getParallaxHOC from "@self/components/parellax";
 import { Typography } from "@mui/material";
 import style from "@self/styles/home.module.scss";
@@ -14,7 +14,7 @@ function Parellex() {
   return (<div className={style.container}>
     <div ref={target} className={style.bgImage}>
       <div className={style.bgOverlay}>
-        <div ref={name.ref} className={style.introContent}>
+        <div ref={name.ref as RefObject<HTMLDivElement>} className={style.introContent}>
           <Typography variant="h4" component="h1">
           Utkarsh Deep
           </Typography>
@@ -29,16 +29,16 @@ function Parellex() {
     </div>
     <div className={style.introWelcome} >
       <p>
-        Hello and welcome to my portfolio website! I'm Utkarsh Deep, a DevOps Lead and AWS certified Solutions Architect with a passion for building highly scalable and resilient infrastructure solutions. My expertise lies in automating infrastructure deployment, continuous integration and delivery, monitoring and alerting, and cloud security.
+        Hello and welcome to my portfolio website! I&apos;m Utkarsh Deep, a DevOps Lead and AWS certified Solutions Architect with a passion for building highly scalable and resilient infrastructure solutions. My expertise lies in automating infrastructure deployment, continuous integration and delivery, monitoring and alerting, and cloud security.
       </p>
       <p>
-        As an AWS certified Solutions Architect, I specialize in designing and implementing solutions using various AWS services such as EC2, S3, RDS, Lambda, CloudFormation, CloudWatch, and more. I've had the opportunity to work with clients from various industries, including healthcare, finance, and e-commerce. I believe in collaborating with clients to understand their unique business requirements and providing solutions that exceed their expectations.
+        As an AWS certified Solutions Architect, I specialize in designing and implementing solutions using various AWS services such as EC2, S3, RDS, Lambda, CloudFormation, CloudWatch, and more. I&apos;ve had the opportunity to work with clients from various industries, including healthcare, finance, and e-commerce. I believe in collaborating with clients to understand their unique business requirements and providing solutions that exceed their expectations.
       </p>
       <p>
-        On this website, you'll find a showcase of some of my recent projects and work samples. Whether it's designing and implementing a highly available architecture on AWS or automating infrastructure deployment with tools like Terraform and Ansible, I'm always up for a challenge.
+        On this website, you&apos;ll find a showcase of some of my recent projects and work samples. Whether it&apos;s designing and implementing a highly available architecture on AWS or automating infrastructure deployment with tools like Terraform and Ansible, I&apos;m always up for a challenge.
       </p>
       <p>
-        If you're looking for a DevOps Lead or AWS Solutions Architect for your business, feel free to contact me through the contact page. I'm always happy to chat and discuss your business needs.
+        If you&apos;re looking for a DevOps Lead or AWS Solutions Architect for your business, feel free to contact me through the contact page. I&apos;m always happy to chat and discuss your business needs.
       </p>
       Thank you for visiting my portfolio website. I hope you find the information here helpful, and I look forward to working with you!
     </div>

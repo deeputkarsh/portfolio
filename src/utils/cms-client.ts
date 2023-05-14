@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-return */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import axios from 'axios';
 import {GraphQLClient, gql} from 'graphql-request';
 import CMS_API_LIST from './cms-api-list';
