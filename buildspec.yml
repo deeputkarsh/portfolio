@@ -1,0 +1,35 @@
+version: 0.2
+env:
+  git-credential-helper: yes
+  variables:
+  # this is needed to for these variables to be available in .env file
+    AccountId: ${AccountId}
+    stage: ${stage}
+
+  parameter-store:
+    CMS_ENDPOINT: /CMS/ENDPOINT
+    CMS_AUTH_TOKEN: /CMS/AUTH_TOKEN
+    
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - n 18.16
+      - npm i --no-audit
+  pre_build:
+    commands:
+      - bash ./scripts/createEnv.sh
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - rm -rf node_modules .git
+artifacts:
+  files:
+    - '**/*'
+# cache:
+#   paths:
+#     - "/root/.npm/**/*"
+#     - 'node_modules/**/*'
